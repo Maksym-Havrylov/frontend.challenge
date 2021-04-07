@@ -1,0 +1,21 @@
+.footer {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #1C1E1F;
+  color: #7E8183;
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-height: 370px;
+  }
+  &__copyright {
+    position: relative;
+    small {
+      position: absolute;
+      bottom: 10px;
+    }
+  }
+}

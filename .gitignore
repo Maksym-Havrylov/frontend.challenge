@@ -1,0 +1,8 @@
+node_modules/ 
+logs 
+*.log 
+/frontend.challenge-raise.band  
+.env 
+.idea/ 
+.vscode/ 
+*.sw*
