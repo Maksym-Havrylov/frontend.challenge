@@ -12,10 +12,12 @@
     max-height: 370px;
   }
   &__copyright {
-    position: relative;
-    small {
-      position: absolute;
-      bottom: 10px;
+    display: flex;
+    justify-content: flex-start;
+    height: 83px;
+    & small {
+      margin: auto 0;
+      color: #3A3A3A;
     }
   }
 }
