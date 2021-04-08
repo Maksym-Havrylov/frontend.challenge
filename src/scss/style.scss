@@ -22,6 +22,8 @@
 // <other styles> -------------------------------------
 @import 'header';
 @import 'footer';
+@import 'search';
+@import 'burger';
 // </other styles> ------------------------------------
 
 body {
@@ -29,6 +31,7 @@ body {
   background-color: #FFFFFF;
   font-family: $fontFamily;
   font-size: $fontSize;
+  height: 100%;
 }
 a {
   text-decoration: none;

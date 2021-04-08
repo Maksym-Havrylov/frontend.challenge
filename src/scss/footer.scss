@@ -1,10 +1,11 @@
 .footer {
-  position: absolute;
+  position: relative;
   left: 0;
   right: 0;
   bottom: 0;
   background-color: #1C1E1F;
   color: #7E8183;
+  height: 372px;
   &__content {
     display: flex;
     justify-content: space-between;
@@ -14,6 +15,9 @@
   &__copyright {
     display: flex;
     justify-content: flex-start;
+    position: absolute;
+    bottom: 0;
+    left: 0;
     height: 83px;
     & small {
       margin: auto 0;

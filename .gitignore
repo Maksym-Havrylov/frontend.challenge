@@ -5,4 +5,6 @@ logs
 .env 
 .idea/ 
 .vscode/ 
+npm-debug.lognode_modules/chokidar/
+node_modules/fsevents/build
 *.sw*
