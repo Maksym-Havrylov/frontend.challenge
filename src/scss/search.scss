@@ -23,7 +23,7 @@
       transition: width .4s cubic-bezier(0.000, 0.795, 0.000, 1.000);
       cursor: pointer;
       &:focus {
-        width: 230px;
+        width: 180px;
         z-index: 1;
         cursor: text;
       }

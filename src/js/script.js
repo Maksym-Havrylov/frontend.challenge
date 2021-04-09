@@ -1,7 +1,9 @@
 @@include('_testWebP.js');
+@@include('vendor.js');
 
 $(document).ready(function () {
-  $('.menu__icon').click(function(event) {
-    $('.menu__icon,.header__menu').toggle('._active');
+  $('.icon-menu').click(function(event) {
+    $('.icon-menu,.menu__body').toggleClass('_active');
+    $('body').toggleClass('lock');
   });
 });

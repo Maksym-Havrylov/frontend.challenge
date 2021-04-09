@@ -1,5 +1,5 @@
 .footer {
-  position: relative;
+  position: absolute;
   left: 0;
   right: 0;
   bottom: 0;
@@ -9,7 +9,9 @@
   &__content {
     display: flex;
     justify-content: space-between;
+    margin: auto auto;
     align-items: center;
+    max-width: $maxWidthContainer + px;
     max-height: 370px;
   }
   &__copyright {
