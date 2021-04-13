@@ -4,7 +4,7 @@
   right: 0;
   top: 0;
   z-index: 50;
-  background-color: transparent;
+  background-color: #ffffff;
   box-shadow: 0 .125rem .25rem rgba(32, 108, 164, 0.16);
   border-bottom: 1px solid rgba(32, 108, 164, 0.2);
   &__content {
@@ -53,6 +53,14 @@
       color: $lowercaseTextColor;
       img {
         margin: -2px 5px 0 0;
+      }
+      @media (max-width: $md3+px) {
+        font-size: 30px;
+        font-weight: 400;
+        justify-content: center;
+        img {
+          display: none;
+        }
       }
     }
   }

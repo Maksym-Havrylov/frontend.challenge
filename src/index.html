@@ -8,9 +8,131 @@
   <div class="wrapper">
     @@include('_partials/_header.html',{})
     <main class="main">
-      <div class="container" style="margin-top: 150px;">
-        <div style="width: 100%;height:300px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi, fugiat mollitia. Reiciendis doloribus, sed architecto adipisci officiis ullam, eligendi totam facilis deserunt doloremque eveniet quas exercitationem quis tempore earum rerum.</div>
-      </div>
+
+      <!-- .iMac -->
+      <div class="iMac">
+        <div class="iMac__container container">
+          <div class="iMac__content">
+            <h1 class="iMac__title title">At vero eos et accusamus et iusto odio dignissimos ducimus</h1>
+            <div class="iMac__text text">
+              Nam libero tempore, cum soluta nobis est eligendi optio, cumque nihil impedit, quo minus id, quod maxime placeat, facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet, ut et voluptates repudiandae sint et molestiae non recusandae. 
+            </div>
+            <button class="iMac__btn btn" type="button">Try for free</button>
+          </div>
+          <div class="iMac__img">
+            <img src="./img/iMac.png" alt="pattern1">
+            <img src="./img/iMac-dots.png" alt="pattern2">
+            <img src="./img/iMac-vector.png" alt="pattern3">
+          </div>
+        </div>
+      </div> <!-- .iMac ends -->
+      
+      <!-- .watch -->
+      <div class="watch">
+        <div class="watch__container container">
+          <div class="watch__content">
+            <h2 class="watch__title title">Temporibus autem quibusdam et aut officiis debitis</h2>
+            <div class="watch__text text">
+              At vero eos et accusamus et iusto odio dignissimos ducimus, qui blanditiis praesentium voluptatum deleniti atque corrupti, quos dolores et quas molestias excepturi sint, obcaecati cupiditate non provident, similique sunt in culpa, qui officia deserunt mollitia animi, id est laborum et dolorum fuga. 
+            </div>
+            <button class="watch__btn btn" type="button">Try for free</button>
+          </div>
+          <div class="watch__img">
+            <img src="./img/watch.png" alt="pattern1">
+            <img src="./img/watch-dots.png" alt="pattern2">
+            <img src="./img/watch-vector.png" alt="pattern3">
+            <div class="watch__notice notice">
+              <img src="./img/notice.svg" alt="notice-ico">
+              <h3 class="notice__title">Notice:</h3>
+              <div class="notice__text">
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> <!-- .watch ends -->
+
+      @@include('_partials/_calculator.html',{})
+      @@include('_partials/_how_it_works.html',{})
+      @@include('_partials/_reviews.html',{})
+
+      <!-- .card-reader -->
+      <div class="card-reader">
+        <div class="card-reader__container container">
+          <div class="card-reader__content">
+            <h2 class="card-reader__title title">Nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut odit aut fugit</h2>
+            <div class="card-reader__text text">
+              Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo.  
+            </div>
+            <ul>
+              <li>Temporibus autem</li>
+              <li>Nam libero</li>
+              <li>Et harum </li>
+            </ul>
+            <button class="card-reader__btn btn" type="button">Try for free </button>
+          </div>
+          <div class="card-reader__img">
+            <img src="./img/card-reader.png" alt="pattern1">
+            <img src="./img/card-reader-dots.png" alt="pattern2">
+            <img src="./img/card-reader-vector.png" alt="pattern3">
+            <div class="card-reader__text--img text">
+              At vero eos et accusamus et iusto odio dignissimos ducimus, qui blanditiis praesentium voluptatum deleniti atque corrupti, quos dolores et quas molestias excepturi sint, obcaecati cupiditate non provident, similique sunt in culpa,  
+            </div>
+          </div>
+        </div>
+      </div> <!-- .card-reader ends -->
+
+      <!-- .headphones -->
+      <div class="headphones">
+        <div class="headphones__container container">
+          <div class="headphones__content">
+            <h2 class="headphones__title title">At vero eos et accusamus</h2>
+            <ul class="headphones__text text">
+              <li>Sed ut perspiciatis, unde omnis iste natus error.</li>
+              <li>Nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos, qui ratione voluptatem sequi nesciunt.</li>
+              <li>Dsed quia non numquam eius modi tempora inci[di]dunt, ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam.</li>
+              <li>Quam nihil molestiae consequatur.</li>
+              <li>At vero eos et accusamus et iusto odio dignissimos ducimus.</li>
+            </ul>
+          </div>
+          <div class="headphones__img">
+            <img src="./img/headphones.png" alt="pattern1">
+            <img src="./img/headphones-dots.png" alt="pattern2">
+            <img src="./img/headphones-vector.png" alt="pattern3">
+          </div>
+        </div>
+      </div> <!-- .headphones ends -->
+
+      <!-- .folder -->
+      <div class="folder">
+        <div class="folder__container container">
+          <div class="folder__content">
+            <h1 class="folder__title title">Temporibus autem quibusdam et aut officiis debitis </h1>
+            <div class="folder__text text">
+              At vero eos et accusamus et iusto odio dignissimos ducimus, qui blanditiis praesentium voluptatum deleniti atque corrupti, quos dolores et quas molestias excepturi sint, obcaecati cupiditate non provident, similique sunt in culpa, qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio, cumque nihil impedit, quo minus id, quod maxime placeat, facere possimus, omnis voluptas assumenda est.
+            </div>
+            <div class="folder__notice notice">
+              <img src="./img/notice.svg" alt="notice-ico">
+              <h3 class="notice__title">Notice:</h3>
+              <div class="notice__text">
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+              </div>
+            </div>
+            <img src="./img/folder-notice-bg.png" alt="background">
+          </div>
+          <div class="folder__img">
+            <img src="./img/folder.png" alt="pattern1">
+            <img src="./img/folder-dots.png" alt="pattern2">
+            <img src="./img/folder-vector.png" alt="pattern3">
+            <div class="folder__text--img text">
+              At vero eos et accusamus et iusto odio dignissimos ducimus, qui blanditiis praesentium voluptatum deleniti atque corrupti, quos dolores et quas molestias excepturi sint, obcaecati cupiditate non provident, similique sunt in culpa,  
+            </div>
+          </div>
+        </div>
+      </div> <!-- .folder ends -->
+
+      @@include('_partials/_faq.html',{})
+
     </main>
     @@include('_partials/_footer.html',{})
   </div>

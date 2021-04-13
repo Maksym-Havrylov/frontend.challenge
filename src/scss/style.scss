@@ -23,6 +23,11 @@
 @import 'header';
 @import 'search';
 @import 'burger';
+@import 'iMac';
+@import 'calculator';
+@import 'how_it_works';
+@import 'reviews';
+@import 'faq';
 @import 'footer';
 // </other styles> ------------------------------------
 
@@ -35,6 +40,10 @@ body {
 }
 a {
   text-decoration: none;
+}
+
+.main {
+  margin-top: 160px;
 }
 
 .container {

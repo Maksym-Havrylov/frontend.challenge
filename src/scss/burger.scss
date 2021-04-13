@@ -30,13 +30,13 @@
       text-align: center;
       padding: 80px 20px 30px 20px;
       transition: all 0.5s ease 0s;
-      background-color: lavenderblush;
+      background-color: rgba(255, 255, 255, 0.9);
       &._active {
         top: 0px;
       }
     }
     &__search {
-      display: block;
+      display: none;
       margin: 0px 0px 20px 0px;
     }
     &__contact {
@@ -52,10 +52,14 @@
       & a {
         font-size: 30px;
       }
-    }
-    & button {
-      display: block;
-      margin: 0px 0px 20px 0px;
+      & button {
+        height: 46px;
+        width: 180px;
+        font-size: 20px;
+        font-weight: 400;
+        margin: 0px auto;
+        display: block;
+      }
     }
   }
 }
