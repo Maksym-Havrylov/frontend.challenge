@@ -7,7 +7,6 @@
     width: 50%;
   }
   &__title {
-    line-height: 120%;
     margin: 198px 20px 20px 0px;
   }
   &__text {
@@ -26,6 +25,33 @@
 // !!!---------- .i-mac ends ----------!!!
 
 .watch {
+  height: 680px;
+  &__container {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__images {
+    width: 50%;
+    position: relative;
+    .notice {
+      bottom: -60px;
+      right: 0px;
+    }
+  }
+  &__content {
+    width: 45%;
+  }
+  &__title {
+    margin: 74px 20px 20px 0px;
+  }
+  &__text {
+    margin: 0px 20px 30px 0px;
+  }
+}
+// !!!---------- .watch ends ----------!!!
+
+.card-reader {
+  height: 700px;
   &__container {
     display: flex;
     justify-content: space-between;
@@ -34,28 +60,6 @@
     width: 45%;
   }
   &__title {
-    line-height: 120%;
-    margin: 74px 20px 20px 0px;
-  }
-  &__text {
-    margin: 0px 20px 30px 0px;
-  }
-  &__images {
-    width: 50%;
-  }
-}
-// !!!---------- .watch ends ----------!!!
-
-.card-reader {
-  &__container {
-    display: flex;
-  }
-  &__content {
-    width: 45%;
-  }
-  &__title {
-    font-size: 42px;
-    line-height: 120%;
     margin: 74px 20px 20px 0px;
   }
   &__text {
@@ -68,18 +72,32 @@
 // !!!---------- .card-reader ends ----------!!!
 
 .headphones {
+  height: 680px;
   &__container {
     display: flex;
+    justify-content: space-between;
   }
   &__content {
     width: 45%;
+    // margin-left: 30px;
   }
   &__title {
-    font-size: 42px;
-    line-height: 120%;
-    margin: 74px 20px 20px 0px;
+    margin: 110px 20px 30px 0px;
   }
   &__text {
+    margin-left: 40px!important;
+    position: relative;
+    li:before {
+      position: absolute;
+      left: -40px;
+      content: ' \25CF';
+      font-size: 30px;
+      line-height: 60%;
+      color: $uppercaseTextColor;
+    }
+    li {
+      margin-bottom: 30px;
+    }
     margin: 0px 20px 30px 0px;
   }
   &__images {
@@ -91,20 +109,56 @@
 .folder {
   &__container {
     display: flex;
+    flex-direction: column;
+  }
+  &__wrap--top {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__wrap--bottom {
+    display: flex;
+    justify-content: space-between;
+    margin: 70px 0px 36px 48px;
+    height: 338px;
+    &.wrap {
+      position: relative;
+      & img[alt="background"] {
+        position: absolute;
+        left: 48px;
+        bottom: 0px;
+        width: 100%;
+        z-index: 1;
+      }
+    }
+    .wrap {
+      width: 50%;
+      .notice {
+        left: 52px;
+        top: 6px;
+      }
+    }
+    .folder__text {
+      position: relative;
+      right: 0px;
+      bottom: -40px;
+      width: 50%;
+    }
   }
   &__content {
     width: 45%;
   }
   &__title {
-    font-size: 42px;
-    line-height: 120%;
-    margin: 74px 20px 20px 0px;
+    margin: 130px 20px 20px 0px;
   }
   &__text {
     margin: 0px 20px 30px 0px;
   }
   &__images {
     width: 50%;
+    & img {
+      margin-left: 50px;
+      width: 100%;
+    }
   }
 }
 // !!!---------- .folder ends ----------!!!

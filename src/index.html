@@ -20,7 +20,7 @@
             <button class="i-mac__btn btn" type="button">Try for free</button>
           </div>
           <div class="i-mac__images">
-            <img src="./img/i-mac.svg" alt="iMac">
+            <img src="./img/i-mac.png" alt="iMac">
             
           </div>
         </div>
@@ -65,7 +65,7 @@
             <button class="card-reader__btn btn" type="button">Try for free </button>
           </div>
           <div class="card-reader__images">
-            <img src="./img/card-reader.svg" alt="Card Reader">
+            <img src="./img/card-reader.png" alt="Card Reader">
             <div class="card-reader__text--img text">
               At vero eos et accusamus et iusto odio dignissimos ducimus, qui blanditiis praesentium voluptatum deleniti atque corrupti, quos dolores et quas molestias excepturi sint, obcaecati cupiditate non provident, similique sunt in culpa,  
             </div>
@@ -76,6 +76,9 @@
       <!-- .headphones -->
       <div class="headphones">
         <div class="headphones__container container">
+          <div class="headphones__images">
+            <img src="./img/headphones.png" alt="Headphones">
+          </div>
           <div class="headphones__content">
             <h2 class="headphones__title">At vero eos et accusamus</h2>
             <ul class="headphones__text text">
@@ -86,29 +89,31 @@
               <li>At vero eos et accusamus et iusto odio dignissimos ducimus.</li>
             </ul>
           </div>
-          <div class="headphones__images">
-            <img src="./img/headphones.svg" alt="Headphones">
-          </div>
         </div>
       </div> <!-- .headphones ends -->
 
       <!-- .folder -->
       <div class="folder">
         <div class="folder__container container">
-          <div class="folder__content">
-            <h1 class="folder__title">Temporibus autem quibusdam et aut officiis debitis </h1>
-            <div class="folder__text text">
-              At vero eos et accusamus et iusto odio dignissimos ducimus, qui blanditiis praesentium voluptatum deleniti atque corrupti, quos dolores et quas molestias excepturi sint, obcaecati cupiditate non provident, similique sunt in culpa, qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio, cumque nihil impedit, quo minus id, quod maxime placeat, facere possimus, omnis voluptas assumenda est.
+          <div class="folder__wrap--top">
+            <div class="folder__content">
+              <h2 class="folder__title">Temporibus autem quibusdam et aut officiis debitis </h2>
+              <div class="folder__text text">
+                At vero eos et accusamus et iusto odio dignissimos ducimus, qui blanditiis praesentium voluptatum deleniti atque corrupti, quos dolores et quas molestias excepturi sint, obcaecati cupiditate non provident, similique sunt in culpa, qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio, cumque nihil impedit, quo minus id, quod maxime placeat, facere possimus, omnis voluptas assumenda est.
+              </div>
             </div>
-
-            @@include('_partials/_notice.html', {})
-
-            <img src="./img/folder-notice-bg.svg" alt="background">
+            <div class="folder__images">
+              <img src="./img/folder.png" alt="Folder">
+            </div>
           </div>
-          <div class="folder__images">
-            <img src="./img/folder.svg" alt="Folder">
-            <div class="folder__text--img text">
-              At vero eos et accusamus et iusto odio dignissimos ducimus, qui blanditiis praesentium voluptatum deleniti atque corrupti, quos dolores et quas molestias excepturi sint, obcaecati cupiditate non provident, similique sunt in culpa,  
+          <div class="folder__wrap--bottom">
+            <div class="wrap">
+              <img src="./img/folder-notice-bg.svg" alt="background">
+
+              @@include('_partials/_notice.html', {})
+            </div>
+            <div class="folder__text text">
+              Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio, cumque nihil impedit, quo minus id, quod maxime placeat, facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet, ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus.
             </div>
           </div>
         </div>
