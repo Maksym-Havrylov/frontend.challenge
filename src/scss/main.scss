@@ -60,13 +60,58 @@
     width: 45%;
   }
   &__title {
-    margin: 74px 20px 20px 0px;
+    margin: 100px 20px 20px 0px;
   }
   &__text {
     margin: 0px 20px 30px 0px;
   }
+  &__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin: 96px 0px 50px 200px!important;
+  }
+  &__link {
+    font-family: Epilogue;
+    font-size: 22px;
+    line-height: 52px;
+    color: $lowercaseTextColor;
+    position: relative;
+    transition: all 0.3s ease;
+    // transition: color 0.4s ease;
+    &:after {
+      content:"";
+      display: block;
+      height: 1px;
+      background-color: $lowercaseTextColor;
+      position: absolute;
+      top: 50%;
+      left: -50px;
+      width: 20px;
+      transition: all 0.3s ease;
+    }
+    &:hover {
+      color: $mainColor;
+      font-weight: 600;
+      letter-spacing: 1px;
+      &:after {
+        content:"";
+        display: block;
+        height: 2px;
+        background-color: $mainColor;
+        width: 40px;
+      }
+    }
+  }
   &__images {
     width: 50%;
+    img {
+      margin-bottom:34px;
+    }
+  }
+  &__text--image {
+    width: 80%;
+    margin-left: 50px;
   }
 }
 // !!!---------- .card-reader ends ----------!!!
