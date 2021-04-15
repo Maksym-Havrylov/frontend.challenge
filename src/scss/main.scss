@@ -1,0 +1,110 @@
+.i-mac {
+  min-height: 856px;
+  &__container {
+    display: flex;
+  }
+  &__content {
+    width: 50%;
+  }
+  &__title {
+    line-height: 120%;
+    margin: 198px 20px 20px 0px;
+  }
+  &__text {
+    margin: 0px 20px 30px 0px;
+  }
+  &__images {
+    width: 50%;
+    position: relative;
+    & img {
+      position: absolute;
+      top: 106px;
+      left: 40px;
+    }
+  }
+}
+// !!!---------- .i-mac ends ----------!!!
+
+.watch {
+  &__container {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__content {
+    width: 45%;
+  }
+  &__title {
+    line-height: 120%;
+    margin: 74px 20px 20px 0px;
+  }
+  &__text {
+    margin: 0px 20px 30px 0px;
+  }
+  &__images {
+    width: 50%;
+  }
+}
+// !!!---------- .watch ends ----------!!!
+
+.card-reader {
+  &__container {
+    display: flex;
+  }
+  &__content {
+    width: 45%;
+  }
+  &__title {
+    font-size: 42px;
+    line-height: 120%;
+    margin: 74px 20px 20px 0px;
+  }
+  &__text {
+    margin: 0px 20px 30px 0px;
+  }
+  &__images {
+    width: 50%;
+  }
+}
+// !!!---------- .card-reader ends ----------!!!
+
+.headphones {
+  &__container {
+    display: flex;
+  }
+  &__content {
+    width: 45%;
+  }
+  &__title {
+    font-size: 42px;
+    line-height: 120%;
+    margin: 74px 20px 20px 0px;
+  }
+  &__text {
+    margin: 0px 20px 30px 0px;
+  }
+  &__images {
+    width: 50%;
+  }
+}
+// !!!---------- .headphones ends ----------!!!
+
+.folder {
+  &__container {
+    display: flex;
+  }
+  &__content {
+    width: 45%;
+  }
+  &__title {
+    font-size: 42px;
+    line-height: 120%;
+    margin: 74px 20px 20px 0px;
+  }
+  &__text {
+    margin: 0px 20px 30px 0px;
+  }
+  &__images {
+    width: 50%;
+  }
+}
+// !!!---------- .folder ends ----------!!!

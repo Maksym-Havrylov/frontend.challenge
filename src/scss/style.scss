@@ -17,13 +17,14 @@
 
 // <variables> ----------------------------------------
 @import 'variables';
+@import 'components';
 // </variables> ---------------------------------------
 
 // <other styles> -------------------------------------
 @import 'header';
 @import 'search';
 @import 'burger';
-@import 'iMac';
+@import 'main';
 @import 'calculator';
 @import 'how_it_works';
 @import 'reviews';
@@ -43,7 +44,7 @@ a {
 }
 
 .main {
-  margin-top: 160px;
+  margin-top: 90px;
 }
 
 .container {

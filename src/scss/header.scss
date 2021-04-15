@@ -14,10 +14,10 @@
     margin: 0 auto;
     align-items: center;
     height: 88px;
-    max-width: $maxWidthContainer + px;
-    @media (max-width:$md1+px) {
-      padding: 0px 40px;
-    }
+    // max-width: $maxWidthContainer + px;
+    // @media (max-width:$md1+px) {
+    //   padding: 0px 40px;
+    // }
   }
   &__logo img{
     position: relative;
@@ -77,7 +77,31 @@
     font-size: 15px;
     line-height: $fontLH;
   }
-  button {
+  &__button--download {
+    width: 114px;
+    height: 35px;
+    margin-top: -6px;
+    margin-left: 30px;
+    font-family: $fontFamily;
+    font-size: 15px;
+    line-height: $fontLH;
+    color: #ffffff;
+    font-weight: 700;
+    background-color: $mainColor;
+    border-radius: 10px;
+    border: none;
+    transition: box-shadow 0.3s ease-in-out;
+    @media (min-width: $md3+px) {
+      &:hover {
+        border: none;
+        background-color: $mainColor;
+        color: #ffffff;
+        box-shadow: 0px 5px 10px rgba(76, 174, 80, 0.3);
+      }
+    }
+  }
+  &__button--sign-up {
+    width: 104px;
     height: 35px;
     margin-top: -6px;
     margin-left: 30px;
@@ -86,22 +110,16 @@
     line-height: $fontLH;
     color: $lowercaseTextColor;
     font-weight: 700;
-    background-color: inherit;
+    background-color: #ffffff;
     border-radius: 10px;
-    border: 2px solid #63718E;
-    transition: color .3s linear;
+    border: 2px solid $lowercaseTextColor;
+    transition: all 0.3s linear;
     @media (min-width: $md3+px) {
       &:hover {
-        border: none;
-        background-color: $mainColor;
-        color: #ffffff;
+        border: 2px solid $mainColor;
+        background-color: #ffffff;
+        color: $mainColor;
       }
     }
-  }
-  &__button--download {
-    width: 114px;
-  }
-  &__button--sign-up {
-    width: 104px;
   }
 }
