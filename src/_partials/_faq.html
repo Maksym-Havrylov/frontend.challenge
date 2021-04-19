@@ -7,7 +7,7 @@
         <div class="faq__togle togle">
           <button class="faq__accordion title">
             <h3>At vero eos et accusamus et iusto odio?</h3>
-            <img src="../img/accordion-arrow.svg" alt="accordion-arrow">
+            <!-- <img id="faq_img--arrow" src="../img/accordion-arrow.svg" alt="accordion-arrow"> -->
           </button>
           <div class="faq__text text">
             <div class="text-wraper">
@@ -17,9 +17,9 @@
         </div>
 
         <div class="faq__togle togle">
-          <button class="faq__accordion title">
+          <button class="faq__accordion title" onclick="rotate_arrow = (rotate_arrow + 180) % 360; $(this).rotate(rotate_arrow);">
             <h3>Nemo enim ipsam voluertrhs?</h3>
-            <img src="../img/accordion-arrow.svg" alt="accordion-arrow">
+            <!-- <img class="north" src="../img/accordion-arrow.svg" alt="accordion-arrow"> -->
           </button>
           <div class="faq__text text">
             <div class="text-wraper">
@@ -32,7 +32,7 @@
         <div class="faq__togle togle">
           <button class="faq__accordion title">
             <h3>Nventore veritatis et quasi architecto beatae vitae dicta ?</h3>
-            <img src="../img/accordion-arrow.svg" alt="accordion-arrow">
+            <!-- <img id="faq_img--arrow" src="../img/accordion-arrow.svg" alt="accordion-arrow"> -->
           </button>
           <div class="faq__text text">
             <div class="text-wraper">

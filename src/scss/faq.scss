@@ -24,9 +24,15 @@
     display: flex;
     justify-content: space-between;
     position: relative;
-    img {
-      position: absolute;
-      top: 30px;
+    &::after {
+      content: url(../img/accordion-arrow.svg);
+      transition: .1s ease;
+
+    }
+    &.active::after {
+      content: url(../img/accordion-arrow.svg);
+      transform: rotate(180deg);
+      top: 34px;
       right: 30px;
     }
   }
