@@ -1,0 +1,51 @@
+.faq {
+  &__wraper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: auto;
+    margin: 88px 68px 164px;
+    h2 {
+      margin-bottom: 30px;
+    }
+
+  }
+  &__accordion {
+    background-color: #ffffff;
+    cursor: pointer;
+    padding: 20px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+    border: 1px solid #F9FAFC;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    img {
+      position: absolute;
+      top: 30px;
+      right: 30px;
+    }
+  }
+  &__text {
+    padding: 0px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    p {
+      margin-bottom: 14px;
+    }
+    .text-wraper {
+      padding: 20px 20px 6px 20px;
+    }
+  }
+  &__btn--wrap {
+    display: flex;
+    justify-content: center;
+    margin-top: 56px;
+  }
+}

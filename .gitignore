@@ -1,7 +1,7 @@
 node_modules/ 
 logs 
 *.log 
-/frontend.challenge-raise.band  
+/frontend.challenge
 .env 
 .idea/ 
 .vscode/ 
