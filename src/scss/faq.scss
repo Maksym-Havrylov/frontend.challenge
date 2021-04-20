@@ -27,6 +27,7 @@
     &::after {
       content: url(../img/accordion-arrow.svg);
       transition: .1s ease;
+      margin-left: 10px;
 
     }
     &.active::after {

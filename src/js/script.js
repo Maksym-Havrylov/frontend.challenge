@@ -10,13 +10,13 @@ $(document).ready(function () {
 });
 
 // .toggle (accordion)
-var acc = document.getElementsByClassName("faq__accordion");
-var i;
+const acc = document.getElementsByClassName("faq__accordion");
+let i;
 
 for (i = 0; i < acc.length; i++) {
   acc[i].addEventListener("click", function() {
     this.classList.toggle("active");
-    var panel = this.nextElementSibling;
+    let panel = this.nextElementSibling;
     if (panel.style.maxHeight) {
       panel.style.maxHeight = null;
     } else {
@@ -25,3 +25,9 @@ for (i = 0; i < acc.length; i++) {
   });
 }
 
+// slider__slick
+// $(document).ready(function(){
+//   $('slider__slick').slick({
+//     setting-name: setting-value
+//   });
+// });
