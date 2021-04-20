@@ -23,11 +23,14 @@ for (i = 0; i < acc.length; i++) {
       panel.style.maxHeight = panel.scrollHeight + "px";
     } 
   });
-}
+};
 
 // slider__slick
-// $(document).ready(function(){
-//   $('slider__slick').slick({
-//     setting-name: setting-value
-//   });
-// });
+$(document).ready(function(){
+  $('.slider__slick').slick({
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 3,
+    dots: true
+  });
+});
