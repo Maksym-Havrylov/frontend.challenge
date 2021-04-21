@@ -27,10 +27,29 @@ for (i = 0; i < acc.length; i++) {
 
 // slider__slick
 $(document).ready(function(){
-  $('.slider__slick').slick({
+  $('.slider').slick({
     infinite: true,
+    arrows: false,
+    focusOnSelect: true,
+    pauseOnDotsHover: true,
+    centerMode: true,
     slidesToShow: 3,
-    slidesToScroll: 3,
-    dots: true
+    slidesToScroll: 1,
+    autoplay: true,
+    // dots: true,
+    responsive: [
+	    {
+	      breakpoint: 768,
+	      settings: {
+	        slidesToShow: 2,
+	      }
+	    },
+	    {
+	      breakpoint: 480,
+	      settings: {
+	        slidesToShow: 1,
+	      }
+	    }
+    ]
   });
 });
