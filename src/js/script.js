@@ -1,7 +1,7 @@
 @@include('_testWebP.js');
 @@include('vendor.js');
 
-// .burger
+/* --- burger --- */
 $(document).ready(function () {
   $('.icon-menu').click(function(event) {
     $('.icon-menu,.menu__body').toggleClass('_active');
@@ -9,7 +9,7 @@ $(document).ready(function () {
   });
 });
 
-// .toggle (accordion)
+/* --- toggle (accordion) --- */
 const acc = document.getElementsByClassName("faq__accordion");
 let i;
 
@@ -25,7 +25,7 @@ for (i = 0; i < acc.length; i++) {
   });
 };
 
-// slider__slick
+/* --- slider__slick ---*/
 $(document).ready(function(){
   $('.slider').slick({
     infinite: true,
@@ -53,3 +53,17 @@ $(document).ready(function(){
     ]
   });
 });
+
+/* --- dropdown btn --- */
+function myFunction() {
+  document.getElementById("calculatorDropdown").classList.toggle("show");
+}
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropdown__btn')) {
+  var myDropdown = document.getElementById("calculatorDropdown");
+    if (myDropdown.classList.contains('show')) {
+      myDropdown.classList.remove('show');
+    }
+  }
+}

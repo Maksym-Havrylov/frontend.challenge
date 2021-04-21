@@ -1,0 +1,144 @@
+.reviews {
+  margin: 86px 0px 160px 0px;
+  &__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 26px;
+    h2 {
+      margin-bottom: 26px;
+    }
+  }
+  &__link {
+    margin:30px 0px 30px 0px;
+    text-align: center;
+    a {
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 16px;
+      color: $mainColor;
+      transition: all 0.2s ease-out;
+      hr {
+        width: 86px;
+        border: none;
+        margin-top: 0px;
+        border-top: 3px dotted $mainColor;
+        transition: all 0.2s ease-out;
+      }
+      &:hover {
+      font-size: 20px;
+        hr {
+          width: 108px;
+        }
+      }
+    }
+  }
+}
+
+/* --- .slick-slider --- */ 
+.slick-slider {
+  padding-top: 10px;
+  height: 520px;
+  overflow: hidden;
+}
+.slick-list {
+  height: 520px;
+  padding-bottom: 10px;
+}
+.slick-track {
+  display: flex;
+}
+.slick-slide {
+
+}
+
+/* --- handling customize component --- */
+.testimonials {
+  position: relative;
+  &__rating--wrap {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__text {
+    position: absolute;
+    top: 22%;
+    font-style: italic;
+    font-size: 18px;
+    line-height: 140%;
+    color: $lowercaseTextColor;
+    padding-right: 30px;
+  }
+}
+.user {
+  &__id {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 12px;
+    color: $lowercaseTextColor;
+    text-transform: uppercase;
+    font-size: 16px;
+    line-height: 150%;
+    img {
+      margin-right: 10px;
+    }
+  }
+  &__category {
+    font-size: 16px;
+    line-height: 150%;
+    color: $lowercaseTextColor;
+  }
+}
+
+/****** Style Star Rating Widget *****/
+.rating {
+  border: none;
+  float: left;
+}
+
+.rating>input {
+  display: none;
+}
+
+.rating>label:before {
+  margin: 5px;
+  font-size: 1.25em;
+  font-family: FontAwesome;
+  display: inline-block;
+  content: "\f005";
+}
+
+.rating>.half:before {
+  content: "\f089";
+  position: absolute;
+}
+
+.rating>label {
+  color: #ddd;
+  float: right;
+}
+
+.rating--total {
+  margin: 14px 0px 0px 74px;
+  font-size: 18px;
+  line-height: 140%;
+  color: $lowercaseTextColor;
+}
+
+/***** CSS Magic to Highlight Stars on Hover *****/
+.rating>input:checked~label,
+/* show gold star when clicked */
+.rating:not(:checked)>label:hover,
+/* hover current star */
+.rating:not(:checked)>label:hover~label {
+  color: $mainColor;
+}
+/* hover previous stars in list */
+.rating>input:checked+label:hover,
+/* hover current star when changing rating */
+.rating>input:checked~label:hover,
+.rating>label:hover~input:checked~label,
+/* lighten current selection */
+.rating>input:checked~label:hover~label {
+  color: $mainColor;
+}
