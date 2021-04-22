@@ -3,30 +3,30 @@
 
 /* --- burger --- */
 $(document).ready(function () {
-  $('.icon-menu').click(function(event) {
+  $('.icon-menu').click(function (event) {
     $('.icon-menu,.menu__body').toggleClass('_active');
     $('body').toggleClass('lock');
   });
-});
+}); /* --- burger ends --- */
 
 /* --- toggle (accordion) --- */
 const acc = document.getElementsByClassName("faq__accordion");
 let i;
 
 for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
+  acc[i].addEventListener("click", function () {
     this.classList.toggle("active");
     let panel = this.nextElementSibling;
     if (panel.style.maxHeight) {
       panel.style.maxHeight = null;
     } else {
       panel.style.maxHeight = panel.scrollHeight + "px";
-    } 
+    }
   });
-};
+}; /* --- toggle (accordion) ends --- */
 
 /* --- slider__slick ---*/
-$(document).ready(function(){
+$(document).ready(function () {
   $('.slider').slick({
     infinite: true,
     arrows: false,
@@ -37,33 +37,71 @@ $(document).ready(function(){
     slidesToScroll: 1,
     autoplay: true,
     // dots: true,
-    responsive: [
-	    {
-	      breakpoint: 768,
-	      settings: {
-	        slidesToShow: 2,
-	      }
-	    },
-	    {
-	      breakpoint: 480,
-	      settings: {
-	        slidesToShow: 1,
-	      }
-	    }
+    responsive: [{
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 2,
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+        }
+      }
     ]
   });
+}); /* --- slider__slick ends ---*/
+
+/* --- quantity ---*/
+$('.minus-btn').on('click', function (e) {
+  e.preventDefault();
+  var $this = $(this);
+  var $input = $this.closest('div').find('input');
+  var value = parseInt($input.val());
+
+  if (value > 1) {
+    value = value - 1;
+  } else {
+    value = 0;
+  }
+
+  $input.val(value);
+
 });
 
-/* --- dropdown btn --- */
-function myFunction() {
-  document.getElementById("calculatorDropdown").classList.toggle("show");
-}
-// Close the dropdown if the user clicks outside of it
-window.onclick = function(e) {
-  if (!e.target.matches('.dropdown__btn')) {
-  var myDropdown = document.getElementById("calculatorDropdown");
-    if (myDropdown.classList.contains('show')) {
-      myDropdown.classList.remove('show');
-    }
+$('.plus-btn').on('click', function (e) {
+  e.preventDefault();
+  var $this = $(this);
+  var $input = $this.closest('div').find('input');
+  var value = parseInt($input.val());
+
+  if (value < 100) {
+    value = value + 1;
+  } else {
+    value = 100;
   }
-}
+
+  $input.val(value);
+}); /* --- quantity ends ---*/
+
+/* --- calendar datepicker ---*/
+$(function() {
+  $( ".calendar" ).datepicker({
+		dateFormat: 'dd/mm/yy',
+		firstDay: 1
+	});
+	
+	$(document).on('click', '.date-picker .input', function(e){
+		var $me = $(this),
+				$parent = $me.parents('.date-picker');
+		$parent.toggleClass('open');
+	});
+	
+	$(".calendar").on("change",function(){
+		var $me = $(this),
+				$selected = $me.val(),
+				$parent = $me.parents('.date-picker');
+		$parent.find('.result').children('span').html($selected);
+	});
+}); /* --- calendar datepicker ends ---*/

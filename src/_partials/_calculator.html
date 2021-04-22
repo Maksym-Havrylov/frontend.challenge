@@ -1,34 +1,66 @@
 <div class="calculator">
   <div class="calculator__container container">
-    <div class="calculator__wraper">
-    
-      <div class="calculator__title">
+
+    <form class="calculator__form parent">
+
+      <div class="calculator__title div1">
         <h2>Berechne den Preis</h2>
+      </div>
+      <div class="calculator__title--description div2">
         <p class="text">Bitte fülle alle nötigen Felder aus und der Preisrechner zeigt dir den Preis</p>
       </div>
 
-      <div class="calculator__row">
+      <select class="calculator__parametrs1 div3" name="some-parametrs">
+        <option value="volvo">Schreiben</option>
+        <option value="saab">Bachelor</option>
+      </select>
 
+      <select class="calculator__parametrs2 div4" name="some-parametrs">
+        <option value="volvo">Bachelor</option>
+        <option value="saab">Schreiben</option>
+      </select>
+
+      <div class="calculator__quantity div5">
+        <div class="quantity">
+          <button class="minus-btn" type="button" name="button">
+            <img src="../img/minus.svg" alt="" />
+          </button>
+          <input type="text" name="name" value="1">
+          <button class="plus-btn" type="button" name="button">
+            <img src="../img/plus.svg" alt="" />
+          </button>
+        </div>
       </div>
 
-      <div class="calculator__row">
-        <div class="calculator__dropdown dropdown">
-          <button class="dropdown__btn" onclick="myFunction()">Hausarbeit</button>
-          <div class="dropdown__content" id="calculatorDropdown">
-            <a href="#">Sprach- & Kulturwissenschaften</a>
-            <a href="#">Berechne den Preis</a>
+      <div class="calculator__calendar div6">
+        <!-- <div class="date-picker">
+          <div class="input">
+            <div class="result"><span></span></div>
+            <button><i class="fa fa-calendar"></i></button>
           </div>
-        </div>
-        <div class="dropdown">
-          <button class="dropdown__btn" onclick="myFunction()">Berechne den Preis</button>
-          <div class="dropdown__content" id="calculatorDropdown">
-            <a href="#">Hausarbeit</a>
-            <a href="#">Sprach- & Kulturwissenschaften</a>
-          </div>
-        </div>
-        <button class="btn calculator__btn">Anfragen</button>
+          <div class="calendar"></div>
+        </div> -->
       </div>
 
-    </div>
+      <div class="calculator__total-price div7">
+        <span>€ 56.25</span>
+      </div>
+
+      <select class="calculator__parametrs3 div8" name="some-parametrs" id="some4">
+        <option value="volvo">Hausarbeit</option>
+        <option value="saab">Sprach- & Kulturwissenschaften</option>
+      </select>
+
+      <select class="calculator__parametrs4 div9" name="some-parametrs" id="some5">
+        <option value="volvo">Sprach- & Kulturwissenschaften</option>
+        <option value="saab">Hausarbeit</option>
+      </select>
+
+      <div class="calculator__submit--btn div10">
+        <input class="btn" type="submit" value="Submit">
+      </div>
+
+    </form>
+
   </div>
 </div>
