@@ -22,10 +22,10 @@
 
     /* --- new arrow style --- */
     background: url(../img/small-arrow--down.svg) no-repeat right #F9FAFC;
-    background-position-x: 176px;
+    background-position-x: 140px;
   }
   &__parametrs3, &__parametrs4 {
-    background-position-x: 400px;
+    background-position-x: 328px;
   }
   &__total-price {
     color: $mainColor;
@@ -38,279 +38,68 @@
       margin: 14px 12px;
     }
   }
-  // &__row {
-  //   display: flex;
-  //   justify-content: space-between;
-  // }
-  // &__btn {
-  //   width: 180px;
-  //   height: 50px;
-  // }
 }
 
 .div10 .btn {
-  height: 50px!important;
-  width: 180px!important;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* --- calendar datepicker ---*/
-.date-picker {
-  $height: 50px;
-  $width: 260px;
-  $color-one-light: #8392A7;
-  $color-one-dark: #68768A;
-  $color-white: #fff;
-
-  width: $width;
-  height: auto;
-  max-height: $height;
-  background: white;
-  position: relative;
-  overflow: hidden;
-  transition: all 0.3s 0s ease-in-out;
-
-  .input {
-    width: 100%;
-    height: $height;
-    font-size: 0;
-    cursor: pointer;
-
-    .result,
-    button {
-      display: inline-block;
-      vertical-align: top;
-    }
-
-    .result {
-      width: calc(100% - #{$height});
-      height: $height;
-      line-height: $height;
-      font-size: 16px;
-      padding: 0 10px;
-      color: grey;
-      box-sizing: border-box;
-    }
-
-    button {
-      width: $height;
-      height: $height;
-      background-color: $color-one-light;
-      color: white;
-      line-height: $height;
-      border: 0;
-      font-size: 18px;
-      padding: 0;
-
-      &:hover {
-        background-color: $color-one-dark;
-      }
-
-      &:focus {
-        outline: 0;
-      }
-    }
-  }
-
-  .calendar {
-    position: relative;
-    width: 100%;
-    background: #fff;
-    border-radius: 0px;
-    overflow: hidden;
-  }
-
-  .ui-datepicker-inline {
-    position: relative;
-    width: 100%;
-  }
-
-  .ui-datepicker-header {
-    height: 100%;
-    line-height: 50px;
-    background: $color-one-light;
-    color: $color-white;
-    margin-bottom: 10px;
-  }
-
-  .ui-datepicker-prev,
-  .ui-datepicker-next {
-    width: 20px;
-    height: 20px;
-    text-indent: 9999px;
-    border: 2px solid $color-white;
-    border-radius: 100%;
-    cursor: pointer;
-    overflow: hidden;
-    margin-top: 12px;
-  }
-
-  .ui-datepicker-prev {
-    float: left;
-    margin-left: 12px;
-
-    &:after {
-      transform: rotate(45deg);
-      margin: -43px 0px 0px 8px;
-    }
-  }
-
-  .ui-datepicker-next {
-    float: right;
-    margin-right: 12px;
-
-    &:after {
-      transform: rotate(-135deg);
-      margin: -43px 0px 0px 6px;
-    }
-  }
-
-  .ui-datepicker-prev,
-  .ui-datepicker-next {
-    &:after {
-      content: '';
-      position: absolute;
-      display: block;
-      width: 4px;
-      height: 4px;
-      border-left: 2px solid $color-white;
-      border-bottom: 2px solid $color-white;
-    }
-  }
-
-  .ui-datepicker-prev:hover,
-  .ui-datepicker-next:hover,
-  .ui-datepicker-prev:hover:after,
-  .ui-datepicker-next:hover:after {
-    border-color: $color-one-dark;
-  }
-
-  .ui-datepicker-title {
-    text-align: center;
-  }
-
-  .ui-datepicker-calendar {
-    width: 100%;
-    text-align: center;
-
-    thead {
-      tr {
-        th {
-          span {
-            display: block;
-            width: 100%;
-            color: $color-one-light;
-            margin-bottom: 5px;
-            font-size: 13px;
-          }
-        }
-      }
-    }
-  }
-
-  .ui-state-default {
-    display: block;
-    text-decoration: none;
-    color: #b5b5b5;
-    line-height: 40px;
-    font-size: 12px;
-
-    &:hover {
-      background: rgba(0, 0, 0, 0.02);
-    }
-  }
-
-  .ui-state-highlight {
-    color: $color-one-dark;
-  }
-
-  .ui-state-active {
-    color: $color-one-dark;
-    background-color: rgba(131, 146, 167, 0.12);
-    font-weight: 600;
-  }
-
-  .ui-datepicker-unselectable {
-    .ui-state-default {
-      color: #eee;
-      border: 2px solid transparent;
-    }
-  }
-
-  &.open {
-    max-height: 400px;
-
-    .input {
-      button {
-        background: $color-one-dark;
-      }
-    }
-  }
+  height: 50px;
+  width: 100%;
 }
 
 /* --- quantity ---*/
 .quantity {
-  padding-top: 20px;
+  height: 50px;
   margin-right: 60px;
   width: 100%;
   text-align: center;
+  background: #F9FAFC;
+  box-shadow: 0px 1px 3px rgba(5, 41, 83, 0.14);
+  border-radius: 10px;
+  position: relative;
+  .minus-btn {
+    top: 0px;
+    left: 0px;
+    img {
+      margin: 0 auto;
+    }
+  }
+  .plus-btn {
+    top: 0px;
+    right: 0px;
+    img {
+      margin: 0 auto;
+    }
+  }
 }
 
 .quantity input {
   -webkit-appearance: none;
   border: none;
   text-align: center;
-  width: 32px;
+  width: 30%;
+  height: 50px;
   font-size: 16px;
-  color: #43484D;
+  color: #3A3A3A;
+  background-color: inherit;
   font-weight: 300;
 }
 
 .minus-btn,
 .plus-btn {
-  width: 30px;
-  height: 30px;
-  background-color: #E1E8EE;
-  border-radius: 6px;
+  width: 35%;
+  height: 50px;
+  background-color: inherit;
   border: none;
   cursor: pointer;
-}
-
-.minus-btn img {
-  margin-bottom: 3px;
-}
-
-.plus-btn img {
-  margin-top: 2px;
+  position: absolute;
 }
 
 button:focus,
 input:focus {
   outline: 0;
+}
+
+.fa {
+  background-image: url(../img/calender.svg) no-repeat;
 }
 
 /* --- grid --- */
@@ -360,3 +149,177 @@ input:focus {
 .div10 {
   grid-area: 4 / 5 / 5 / 6;
 }
+
+/* --- calendar datepicker ---*/
+// <!DOCTYPE html>
+// <html>
+// <head>
+// <meta name="viewport" content="width=device-width, initial-scale=1.0">
+// <style>
+// /*the container must be positioned relative:*/
+// .custom-select {
+//   position: relative;
+//   font-family: Arial;
+// }
+
+// .custom-select select {
+//   display: none; /*hide original SELECT element:*/
+// }
+
+// .select-selected {
+//   background-color: #F9FAFC;
+//   border-radius: 10px;
+// }
+
+// /*style the arrow inside the select element:*/
+// .select-selected:after {
+//   position: absolute;
+//   content: "";
+//   top: 14px;
+//   right: 10px;
+//   width: 0;
+//   height: 0;
+//   border: 6px solid transparent;
+//   border-color: #111 transparent transparent transparent;
+// }
+
+// /*point the arrow upwards when the select box is open (active):*/
+// .select-selected.select-arrow-active:after {
+//   border-color: transparent transparent #fff transparent;
+//   top: 7px;
+// }
+
+// /*style the items (options), including the selected item:*/
+// .select-items div,.select-selected {
+//   color: #3A3A3A;
+//   padding: 12px 0px 11px 20px;
+//   border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+//   cursor: pointer;
+//   user-select: none;
+//   font-size: 18px;
+//   line-height: 150%;
+// }
+
+// /*style items (options):*/
+// .select-items {
+//   position: absolute;
+//   background-color: #F9FAFC;
+//   top: 100%;
+//   left: 0;
+//   right: 0;
+//   z-index: 99;
+//   padding: 16px;
+//   margin-top: 24px;
+//   border-radius: 10px;
+// }
+
+// /*hide the items when the select box is closed:*/
+// .select-hide {
+//   display: none;
+// }
+
+// .select-items div:hover, .same-as-selected {
+//   background-color: #FEE5FF;
+//   color: #C774EE;
+//   border-radius: 10px;
+//   transition: all 0.2s ease-in-out;
+// }
+// </style>
+// </head>     
+
+// <body>
+
+// <h2>Custom Select</h2>
+
+// <!--surround the select box with a "custom-select" DIV element. Remember to set the width:-->
+// <div class="custom-select" style="width:400px;">
+//   <select>
+//     <option value="0">Select...</option>
+//     <option value="1">Sprach- & Kulturwissenschaften</option>
+//     <option value="2">Hausarbeit</option>
+//   </select>
+// </div>
+
+// <script>
+// var x, i, j, l, ll, selElmnt, a, b, c;
+// /*look for any elements with the class "custom-select":*/
+// x = document.getElementsByClassName("custom-select");
+// l = x.length;
+// for (i = 0; i < l; i++) {
+//   selElmnt = x[i].getElementsByTagName("select")[0];
+//   ll = selElmnt.length;
+//   /*for each element, create a new DIV that will act as the selected item:*/
+//   a = document.createElement("DIV");
+//   a.setAttribute("class", "select-selected");
+//   a.innerHTML = selElmnt.options[selElmnt.selectedIndex].innerHTML;
+//   x[i].appendChild(a);
+//   /*for each element, create a new DIV that will contain the option list:*/
+//   b = document.createElement("DIV");
+//   b.setAttribute("class", "select-items select-hide");
+//   for (j = 1; j < ll; j++) {
+//     /*for each option in the original select element,
+//     create a new DIV that will act as an option item:*/
+//     c = document.createElement("DIV");
+//     c.innerHTML = selElmnt.options[j].innerHTML;
+//     c.addEventListener("click", function(e) {
+//         /*when an item is clicked, update the original select box,
+//         and the selected item:*/
+//         var y, i, k, s, h, sl, yl;
+//         s = this.parentNode.parentNode.getElementsByTagName("select")[0];
+//         sl = s.length;
+//         h = this.parentNode.previousSibling;
+//         for (i = 0; i < sl; i++) {
+//           if (s.options[i].innerHTML == this.innerHTML) {
+//             s.selectedIndex = i;
+//             h.innerHTML = this.innerHTML;
+//             y = this.parentNode.getElementsByClassName("same-as-selected");
+//             yl = y.length;
+//             for (k = 0; k < yl; k++) {
+//               y[k].removeAttribute("class");
+//             }
+//             this.setAttribute("class", "same-as-selected");
+//             break;
+//           }
+//         }
+//         h.click();
+//     });
+//     b.appendChild(c);
+//   }
+//   x[i].appendChild(b);
+//   a.addEventListener("click", function(e) {
+//       /*when the select box is clicked, close any other select boxes,
+//       and open/close the current select box:*/
+//       e.stopPropagation();
+//       closeAllSelect(this);
+//       this.nextSibling.classList.toggle("select-hide");
+//       this.classList.toggle("select-arrow-active");
+//     });
+// }
+// function closeAllSelect(elmnt) {
+//   /*a function that will close all select boxes in the document,
+//   except the current select box:*/
+//   var x, y, i, xl, yl, arrNo = [];
+//   x = document.getElementsByClassName("select-items");
+//   y = document.getElementsByClassName("select-selected");
+//   xl = x.length;
+//   yl = y.length;
+//   for (i = 0; i < yl; i++) {
+//     if (elmnt == y[i]) {
+//       arrNo.push(i)
+//     } else {
+//       y[i].classList.remove("select-arrow-active");
+//     }
+//   }
+//   for (i = 0; i < xl; i++) {
+//     if (arrNo.indexOf(i)) {
+//       x[i].classList.add("select-hide");
+//     }
+//   }
+// }
+// /*if the user clicks anywhere outside the select box,
+// then close all select boxes:*/
+// document.addEventListener("click", closeAllSelect);
+// </script>
+
+// </body>
+// </html>
