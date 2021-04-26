@@ -128,6 +128,9 @@
       margin: 0 auto;
     }
   }
+  &:hover {
+    box-shadow: 4px 6px 10px rgba(0, 0, 0, 0.05);
+  }
 }
 
 .quantity input {
