@@ -44,34 +44,46 @@ body {
   font-size: $fontSize;
   height: 100%;
 }
-a {
-  text-decoration: none;
+
+.wrapper {
+  position: relative;
+  min-height: 100%;
 }
 
 .main {
   margin-top: 90px;
 }
 
+a {
+  text-decoration: none;
+}
+
 .container {
   max-width: $maxWidthContainer + px;
   margin-left: auto;
   margin-right: auto;
+
   @media (min-width: $md1+px) {
     max-width: 1320px;
   }
+
   @media (min-width: $md2+px) {
     max-width: 1140px;
   }
+
   @media (min-width: $md3+px) {
     max-width: 960px;
   }
+
   @media (min-width: $md4+px) {
     max-width: 720px;
   }
+
   @media (min-width: $md5+px) {
     max-width: 520px;
     padding: 0 10px;
   }
+
   @media (min-width: $md6+px) {
     max-width: none;
     padding: 0 10px;
