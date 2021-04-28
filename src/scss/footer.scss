@@ -2,10 +2,9 @@
   position: absolute;
   left: 0;
   right: 0;
-  bottom: 0;
   background-color: #1C1E1F;
   color: #7E8183;
-  height: 372px;
+  padding-top: 63px;
   &__content {
     display: flex;
     justify-content: space-between;
@@ -14,16 +13,134 @@
     max-width: $maxWidthContainer + px;
     max-height: 370px;
   }
+  &__contact {
+    a {
+      color: $lowercaseTextColor;
+      display: flex;
+      flex-direction: column;
+      font-family: Roboto;
+      font-size: 16px;
+      line-height: 19px;
+      transition: color 0.2s ease-in-out;
+      &:hover {
+        color: #A8AEB8;
+      }
+    }
+    margin-bottom: 43px;
+  }
   &__copyright {
     display: flex;
     justify-content: flex-start;
-    position: absolute;
-    bottom: 0;
-    left: 0;
+    margin: auto auto;
     height: 83px;
     & small {
       margin: auto 0;
       color: #3A3A3A;
     }
+  }
+}
+
+.rate {
+  margin-bottom: 43px;
+  &__list {
+    display: flex;
+    justify-content:flex-start;
+    li {
+      margin-right: 4px;
+      &:last-child {
+        color: $mainColor;
+        margin-left: 14px;
+      }
+      ._slash {
+        color: $lowercaseTextColor;
+      }
+    }
+  }
+}
+
+.sellect {
+  width: 100px;
+}
+
+.footer__info {
+  .custom-select {
+    position: relative;
+    text-align: left;
+    height: 30px;
+  }
+
+  .custom-select select {
+    display: none; /*hide original SELECT element:*/
+  }
+
+  .select-selected {
+    background-color: inherit;
+    border-radius: 28px;
+    border: 2px solid #7E8183;
+    width: 100px;
+    padding: 8px 20px;
+    font-family: Roboto;
+    font-size: 16px;
+    line-height: 19px;
+    overflow: hidden;
+  }
+  .select-selected:hover {
+    color: $mainColor;
+    border: 2px solid $mainColor;
+    &::after {
+      content: url(../img/small-pink-arrow--down.svg);
+    }
+  }
+
+  .select-selected.select-arrow-active {
+    border: 2px solid $mainColor;
+    box-shadow: 4px 6px 10px rgba(0, 0, 0, 0.05);
+  }
+
+  /*style the arrow inside the select element:*/
+  .select-selected:after {
+    position: absolute;
+    content: url(../img/small-grey-arrow--down.svg);
+    top: 8px;
+    right: 22px;
+  }
+
+  /*point the arrow upwards when the select box is open (active):*/
+  .select-selected.select-arrow-active:after {
+    transform: rotate(180deg);
+    top: 12px;
+    right: 22px;
+  }
+
+  /*style the items (options), including the selected item:*/
+  .select-items div,.select-selected {
+    color: #7E8183;
+    // padding: 12px 0px 11px 20px;
+    // border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+    cursor: pointer;
+    user-select: none;
+    font-size: 18px;
+    line-height: 150%;
+  }
+
+  /*style items (options):*/
+  .select-items {
+    background-color: #3A3A3A;
+    top: 100%;
+    padding: 6px;
+    margin-top: 24px;
+    border-radius: 28px;
+  }
+
+  /*hide the items when the select box is closed:*/
+  .select-hide {
+    display: none;
+  }
+
+  .select-items div:hover, .same-as-selected {
+    background-color: #FEE5FF;
+    color: #C774EE;
+    border-radius: 28px;
+    transition: all 0.2s ease-in-out;
   }
 }
