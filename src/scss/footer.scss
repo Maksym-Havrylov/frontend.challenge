@@ -15,7 +15,7 @@
   }
   &__contact {
     a {
-      color: $lowercaseTextColor;
+      color: #7E8183;
       display: flex;
       flex-direction: column;
       font-family: Roboto;
@@ -27,6 +27,127 @@
       }
     }
     margin-bottom: 43px;
+  }
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+    height: auto;
+    &--list {
+      li {
+        &:not(:last-child) {
+          margin-bottom: 15px;
+        }
+      }
+    }
+    &--item {
+      color: #7E8183;
+      transition: all 0.2s;
+      &:hover {
+        color: #A8AEB8;
+      }
+    }
+  }
+  &__icons {
+    min-height: 152;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 174px;
+    div {
+      display: flex;
+      justify-content: space-between;
+      &:not(:last-child) {
+        margin-bottom: 32px;
+      }
+    }
+  }
+  &__social {
+  position: relative;
+    &--link {
+      &:not(:last-child) {
+        margin-right: 10px;
+      }
+      .facebook-wrap {
+        position: absolute;
+        width: 36px;
+        height: 36px;
+        border-radius: 6px;
+        background: url(../img/logos-facebook-invert.svg) no-repeat;
+        transition: all 0.3s ease-in-out;
+        &:hover {
+          opacity: 0;
+        }
+      }
+      .instagram-wrap {
+        position: absolute;
+        width: 36px;
+        height: 36px;
+        border-radius: 6px;
+        background: url(../img/logos-instagram-invert.svg) no-repeat;
+        transition: all 0.3s ease-in-out;
+        &:hover {
+          opacity: 0;
+        }
+      }
+      .youtube-wrap {
+        position: absolute;
+        width: 36px;
+        height: 36px;
+        border-radius: 6px;
+        background: url(../img/logos-youtube-invert.svg) no-repeat;
+        transition: all 0.3s ease-in-out;
+        &:hover {
+          opacity: 0;
+        }
+      }
+      .pinterest-wrap {
+        position: absolute;
+        width: 36px;
+        height: 36px;
+        border-radius: 6px;
+        background: url(../img/logos-pinterest-invert.svg) no-repeat;
+        transition: all 0.3s ease-in-out;
+        &:hover {
+          opacity: 0;
+        }
+      }
+    }
+  }
+  &__payment {
+    width: 100px;
+    position: relative;
+    a {
+      &:not(:last-child) {
+        margin-right: 10px;
+      }
+    }
+    .visa-wrap {
+      position: absolute;
+      display: block;
+      width: 41px;
+      height: 32px;
+      border-radius: 4px;
+      background-color: #ffffff;
+      opacity: 0;
+      transition: opacity 0.3s ease-in-out;
+      &:hover {
+        opacity: 0.4;
+      }
+    }
+    .mastercard-wrap {
+      position: absolute;
+      display: block;
+      width: 48px;
+      height: 32px;
+      border-radius: 4px;
+      background-color: #ffffff;
+      opacity: 0;
+      transition: opacity 0.3s ease-in-out;
+      &:hover {
+        opacity: 0.4;
+      }
+    }
   }
   &__copyright {
     display: flex;
@@ -77,8 +198,8 @@
     background-color: inherit;
     border-radius: 28px;
     border: 2px solid #7E8183;
-    width: 100px;
-    padding: 8px 20px;
+    width: 110px;
+    padding: 2px 26px;
     font-family: Roboto;
     font-size: 16px;
     line-height: 19px;
@@ -101,15 +222,15 @@
   .select-selected:after {
     position: absolute;
     content: url(../img/small-grey-arrow--down.svg);
-    top: 8px;
-    right: 22px;
+    top: 2px;
+    right: 14px;
   }
 
   /*point the arrow upwards when the select box is open (active):*/
   .select-selected.select-arrow-active:after {
     transform: rotate(180deg);
-    top: 12px;
-    right: 22px;
+    top: 6px;
+    right: 14px;
   }
 
   /*style the items (options), including the selected item:*/
