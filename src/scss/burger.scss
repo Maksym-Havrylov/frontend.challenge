@@ -5,7 +5,6 @@
   .header {
     &__content {
       height: 70px;
-      padding: 0px 40px 0px 40px;
     }
     &::before {
       content: '';
@@ -83,6 +82,7 @@
       height: 3px;
       background-color: #63718E;
       border-radius:100px;
+      transition: all 0.2s;
       &:nth-child(2) {
         bottom: 8px;
       }
