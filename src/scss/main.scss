@@ -60,10 +60,16 @@
     .notice {
       bottom: -60px;
       right: 0px;
+    @media (max-width:$md3+px) {
+      top: 90px;
+      right: -90px;
+    }
     }
     @media (max-width:$md3+px) {
       width: 100%;
       order: 2;
+      left: -90px;
+      top: 30px;
     }
   }
   &__content {
