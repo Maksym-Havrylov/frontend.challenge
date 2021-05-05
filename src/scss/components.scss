@@ -85,6 +85,14 @@
     line-height: $fontLH;
     color: $lowercaseTextColor;
   }
+  @media (max-width:$md3+px) {
+    height: 208px;
+    padding: 20px 29px;
+    &__text {
+      height: 96px;
+      overflow: hidden;
+    }
+  }
 }
 
 h1, h2, h3, h4 {

@@ -1,11 +1,23 @@
 .reviews {
   margin-top: 100px;
+  @media (max-width:$md3+px) {
+    margin-top: 40px;
+  }
+  .container {
+    @media (max-width:$md3+px) {
+      min-width: 100%;
+      padding: 0px;
+    }
+  }
   &__text {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-bottom: 26px;
+    @media (max-width:$md3+px) {
+      margin-bottom: 10px;
+    }
     h2 {
       margin-bottom: 26px;
     }
@@ -41,6 +53,9 @@
   padding-top: 10px;
   height: 520px;
   overflow: hidden;
+  @media (max-width:$md3+px) {
+    
+  }
 }
 .slick-list {
   height: 520px;
@@ -48,9 +63,6 @@
 }
 .slick-track {
   display: flex;
-}
-.slick-slide {
-
 }
 
 /* --- handling customize component --- */

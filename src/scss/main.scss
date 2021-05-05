@@ -16,7 +16,7 @@
   &__title {
     margin: 198px 20px 20px 0px;
     @media (max-width:$md3+px) {
-      margin-top: 80px;
+      margin-top: 50px;
       line-height: 120%;
     }
   }
@@ -62,13 +62,13 @@
       right: 0px;
     @media (max-width:$md3+px) {
       top: 90px;
-      right: -90px;
+      right: -140px;
     }
     }
     @media (max-width:$md3+px) {
-      width: 100%;
+      width: 90%;
       order: 2;
-      left: -90px;
+      left: -70px;
       top: 30px;
     }
   }
@@ -81,9 +81,16 @@
   }
   &__title {
     margin: 74px 20px 20px 0px;
+    @media (max-width:$md3+px) {
+      margin-top: 0px;
+    }
   }
   &__text {
     margin: 0px 20px 30px 0px;
+  }
+  @media (max-width:$md3+px) {
+    min-height: 820px;
+    margin-top: 50px;
   }
 }
 // !!!---------- .watch ends ----------!!!
@@ -91,15 +98,30 @@
 .card-reader {
   height: 700px;
   margin-top: 100px;
+  @media (max-width:$md3+px) {
+    height: 710px;
+    margin-top: 0px;
+  }
   &__container {
     display: flex;
     justify-content: space-between;
+    @media (max-width:$md3+px) {
+      flex-direction: column;
+      position: relative;
+    }
   }
   &__content {
     width: 45%;
+    @media (max-width:$md3+px) {
+      order: 1;
+      width: 100%;
+    }
   }
   &__title {
     margin: 100px 20px 20px 0px;
+    @media (max-width:$md3+px) {
+      margin-top: 20px;
+    }
   }
   &__text {
     margin: 0px 20px 30px 0px;
@@ -109,6 +131,17 @@
     flex-direction: column;
     justify-content: flex-end;
     margin: 96px 0px 50px 200px!important;
+    @media (max-width:$md3+px) {
+      flex-direction: row;
+      justify-content: space-between;
+      margin: 0px 200px 20px 0px!important;
+      position: absolute;
+      bottom: -20px;
+      left: 0px;
+      li:not(:last-child) {
+        margin-right: 20px;
+      }
+    }
   }
   &__link {
     font-family: Epilogue;
@@ -117,7 +150,16 @@
     color: $lowercaseTextColor;
     position: relative;
     transition: all 0.2s ease;
-    // transition: color 0.4s ease;
+    @media (max-width:$md3+px) {
+      font-size: 16px;
+      font-weight: 400;
+      &:active {
+        color: $mainColor;
+        font-size: 22px;
+        font-weight: 600;
+        letter-spacing: 1px;
+      }
+    }
     &:after {
       content:"";
       display: block;
@@ -128,6 +170,9 @@
       left: -50px;
       width: 20px;
       transition: all 0.3s ease;
+      @media (max-width:$md3+px) {
+        visibility: hidden;
+      }
     }
     &:hover {
       color: $mainColor;
@@ -144,29 +189,61 @@
   }
   &__images {
     width: 50%;
+    @media (max-width:$md3+px) {
+      order: 2;
+      width: 70%;
+      align-self: center;
+    }
     img {
       margin-bottom:34px;
+      @media (max-width:$md3+px) {
+        position: relative;
+        top: 0px;
+        left: -60px;
+        margin-bottom: 60px;
+      }
     }
   }
   &__text--image {
     width: 80%;
     margin-left: 50px;
+    @media (max-width:$md3+px) {
+      position: absolute;
+      right: 0px;
+      left: 0px;
+      width: 100%;
+      margin-left: 0px;
+    }
   }
 }
 // !!!---------- .card-reader ends ----------!!!
 
 .headphones {
   height: 680px;
+  @media (max-width:$md3+px) {
+    margin-top: 20px;
+    height: 790px;
+    min-height: 790px;
+  }
   &__container {
     display: flex;
     justify-content: space-between;
+    @media (max-width:$md3+px) {
+      flex-direction: column;
+    }
   }
   &__content {
     width: 45%;
-    // margin-left: 30px;
+    @media (max-width:$md3+px) {
+      width: 100%;
+      order: 2;
+    }
   }
   &__title {
     margin: 110px 20px 30px 0px;
+    @media (max-width:$md3+px) {
+      margin-top: 20px;
+    }
   }
   &__text {
     margin-left: 40px!important;
@@ -186,11 +263,24 @@
   }
   &__images {
     width: 50%;
+    @media (max-width:$md3+px) {
+      width: 70%;
+      align-self: center;
+      order: 1;
+      position: relative;
+      img {
+        width: 100%;
+      }
+    }
   }
 }
 // !!!---------- .headphones ends ----------!!!
 
 .folder {
+  @media (max-width:$md3+px) {
+    height: 1280px;
+    min-height: 1280px;
+  }
   &__container {
     display: flex;
     flex-direction: column;
