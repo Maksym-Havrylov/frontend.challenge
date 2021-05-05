@@ -288,12 +288,20 @@
   &__wrap--top {
     display: flex;
     justify-content: space-between;
+    @media (max-width:$md3+px) {
+      flex-direction: column;
+    }
   }
   &__wrap--bottom {
     display: flex;
     justify-content: space-between;
     margin: 70px 0px 0px 48px;
     height: 338px;
+    @media (max-width:$md3+px) {
+      flex-direction: column;
+      margin-top: 20px;
+      margin-left: 0px;
+    }
     &.wrap {
       position: relative;
       & img[alt="background"] {
@@ -302,13 +310,23 @@
         bottom: 0px;
         width: 100%;
         z-index: 1;
+        @media (max-width:$md3+px) {
+          left: 60px;
+        }
       }
     }
     .wrap {
       width: 50%;
+      @media (max-width:$md3+px) {
+        height: 240px;
+      }
       .notice {
         left: 52px;
         top: 6px;
+        @media (max-width:$md3+px) {
+          left: 72px;
+          top: 36px;
+        }
       }
     }
     .folder__text {
@@ -316,19 +334,36 @@
       right: 0px;
       bottom: -40px;
       width: 50%;
+      @media (max-width:$md3+px) {
+        width: 100%;
+        order: 2;
+        margin-top: 10px;
+      }
     }
   }
   &__content {
     width: 45%;
+    @media (max-width:$md3+px) {
+      width: 100%;
+      order: 2;
+    }
   }
   &__title {
     margin: 130px 20px 20px 0px;
+    @media (max-width:$md3+px) {
+      margin-top: 20px;
+    }
   }
   &__text {
     margin: 0px 20px 30px 0px;
   }
   &__images {
     width: 50%;
+    @media (max-width:$md3+px) {
+      width: 80%;
+      order: 1;
+      margin-top: 60px;
+    }
     & img {
       margin-left: 50px;
       width: 100%;

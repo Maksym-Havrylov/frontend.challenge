@@ -68,7 +68,6 @@
   &__wrap {
     display: flex;
     justify-content: flex-start;
-
   }
   &__title {
     margin: 21px 0px 21px 10px;
@@ -89,6 +88,7 @@
     height: 208px;
     padding: 20px 29px;
     &__text {
+      margin-top: 10px;
       height: 96px;
       overflow: hidden;
     }
