@@ -5,8 +5,14 @@
     justify-content: space-between;
     height: auto;
     margin: 88px 68px 164px;
+    @media (max-width:$md3+px) {
+      margin: 68px 0px 44px;
+    }
     h2 {
       margin-bottom: 30px;
+      @media (max-width:$md3+px) {
+        align-self: center;
+      }
     }
 
   }
@@ -53,5 +59,8 @@
     display: flex;
     justify-content: center;
     margin-top: 56px;
+    @media (max-width:$md3+px) {
+      margin-top: 36px;
+    }
   }
 }
