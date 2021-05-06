@@ -1,4 +1,7 @@
 .faq {
+  @media (max-width:$md6+px) {
+    padding: 0 10px;
+  }
   &__wraper {
     display: flex;
     flex-direction: column;

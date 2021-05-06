@@ -1,5 +1,8 @@
 .i-mac {
   min-height: 856px;
+  @media (max-width:$md6+px) {
+    padding: 0 10px;
+  }
   &__container {
     display: flex;
     @media (max-width:$md3+px) {
@@ -19,9 +22,23 @@
       margin-top: 50px;
       line-height: 120%;
     }
+    @media (max-width:$md4+px) {
+      margin-top: 30px;
+    }
+    @media (max-width:$md5+px) {
+      width: 100%;
+    }
   }
   &__text {
     margin: 0px 20px 30px 0px;
+    @media (max-width:$md5+px) {
+      width: 100%;
+    }
+  }
+  &__btn {
+    @media (max-width:$md5+px) {
+      width: 100%;
+    }
   }
   &__images {
     width: 50%;
@@ -33,6 +50,13 @@
       @media (max-width:$md3+px) {
         top: 40px;
       }
+      @media (max-width:$md4+px) {
+        top: 50px;
+      }
+      @media (max-width:$md5+px) {
+        top: 30px;
+        left: 30px;
+      }
     }
     @media (max-width:$md3+px) {
       order: 2;
@@ -41,12 +65,23 @@
       right: 0px;
       margin-left: 70px;
     }
+    @media (max-width:$md5+px) {
+      width: 90%;
+      margin-left: 0px;
+    }
   }
 }
 // !!!---------- .i-mac ends ----------!!!
 
 .watch {
   height: 680px;
+  @media (max-width:$md5+px) {
+    margin-bottom: 70px;
+  }
+  @media (max-width:$md6+px) {
+    margin-bottom: 80px;
+    padding: 0 10px;
+  }
   &__container {
     display: flex;
     justify-content: space-between;
@@ -57,19 +92,37 @@
   &__images {
     width: 50%;
     position: relative;
-    .notice {
-      bottom: -60px;
-      right: 0px;
-    @media (max-width:$md3+px) {
-      top: 90px;
-      right: -140px;
-    }
-    }
     @media (max-width:$md3+px) {
       width: 90%;
       order: 2;
       left: -70px;
       top: 30px;
+    }
+    @media (max-width:$md4+px) {
+      width: 100%;
+      order: 2;
+      left: -110px;
+      top: 30px;
+    }
+    @media (max-width:$md5+px) {
+      left: 0px;
+      top: 20px;
+    }
+    .notice {
+      bottom: -60px;
+      right: 0px;
+      @media (max-width:$md3+px) {
+        top: 90px;
+        right: -140px;
+      }
+      @media (max-width:$md5+px) {
+        left: 0px;
+        top: 250px;
+        width: 100%;
+      }
+      @media (max-width:$md6+px) {
+        top: 150px;
+      }
     }
   }
   &__content {
@@ -84,6 +137,9 @@
     @media (max-width:$md3+px) {
       margin-top: 0px;
     }
+    @media (max-width:$md5+px) {
+      width: 100%;
+    }
   }
   &__text {
     margin: 0px 20px 30px 0px;
@@ -91,6 +147,9 @@
   @media (max-width:$md3+px) {
     min-height: 820px;
     margin-top: 50px;
+  }
+  @media (max-width:$md5+px) {
+    width: 100%;
   }
 }
 // !!!---------- .watch ends ----------!!!
@@ -101,6 +160,13 @@
   @media (max-width:$md3+px) {
     height: 710px;
     margin-top: 0px;
+  }
+  @media (max-width:$md3+px) {
+    height: 780px;
+    margin-top: 0px;
+  }
+  @media (max-width:$md6+px) {
+    padding: 0 10px;
   }
   &__container {
     display: flex;
@@ -141,6 +207,9 @@
       li:not(:last-child) {
         margin-right: 20px;
       }
+    }
+    @media (max-width:$md4+px) {
+      margin: 0px 0px 20px 0px!important;
     }
   }
   &__link {
@@ -194,6 +263,9 @@
       width: 70%;
       align-self: center;
     }
+    @media (max-width:$md4+px) {
+      width: 90%;
+    }
     img {
       margin-bottom:34px;
       @media (max-width:$md3+px) {
@@ -224,6 +296,13 @@
     margin-top: 20px;
     height: 790px;
     min-height: 790px;
+  }
+  @media (max-width:$md4+px) {
+    height: 760px;
+    min-height: 760px;
+  }
+  @media (max-width:$md6+px) {
+    padding: 0 10px;
   }
   &__container {
     display: flex;
@@ -280,6 +359,13 @@
   @media (max-width:$md3+px) {
     height: 1280px;
     min-height: 1280px;
+  }
+  @media (max-width:$md4+px) {
+    height: 1340px;
+    min-height: 1340px;
+  }
+  @media (max-width:$md6+px) {
+    padding: 0 10px;
   }
   &__container {
     display: flex;
@@ -339,6 +425,9 @@
         order: 2;
         margin-top: 10px;
       }
+      @media (max-width:$md4+px) {
+        margin-top: 60px;
+      }
     }
   }
   &__content {
@@ -364,9 +453,16 @@
       order: 1;
       margin-top: 60px;
     }
+    @media (max-width:$md4+px) {
+      width: 100%;
+      margin: 0px;
+    }
     & img {
       margin-left: 50px;
       width: 100%;
+      @media (max-width:$md4+px) {
+        margin: 0px;
+      }
     }
   }
 }

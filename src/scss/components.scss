@@ -93,6 +93,24 @@
       overflow: hidden;
     }
   }
+  @media (max-width:$md5+px) {
+    height: 220px;
+    padding: 20px 29px;
+    &__text {
+      margin-top: 10px;
+      height: 100px;
+      overflow: hidden;
+    }
+  }
+  @media (max-width:$md6+px) {
+    height: 260px;
+    padding: 20px 29px;
+    &__text {
+      margin-top: 10px;
+      height: 140px;
+      overflow: hidden;
+    }
+  }
 }
 
 h1, h2, h3, h4 {
