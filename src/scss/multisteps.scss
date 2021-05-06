@@ -4,8 +4,10 @@
     margin-top: 60px;
   }
 
-  & .container {
-
+  .container {
+    @media (max-width:$md3+px) {
+      padding: 0px;
+    }
     >h2,
     >p {
       text-align: center;
@@ -15,6 +17,10 @@
       margin: 0 auto;
       width: 50%;
       margin-top: 20px;
+      @media (max-width:$md3+px) {
+        width: 100%;
+        margin-top: 16px;
+      }
     }
   }
 }
@@ -26,6 +32,12 @@
 
   &--wraper {
     margin-bottom: 60px;
+    @media (max-width:$md3+px) {
+      margin-bottom: 30px;
+    }
+    @media (max-width:$md5+px) {
+      margin-bottom: 20px;
+    }
   }
 }
 
@@ -68,7 +80,7 @@
     line-height: 150%;
   }
 
-  @media (min-width: 500px) {
+  @media (min-width: 320px) {
     text-indent: 0;
   }
 
@@ -109,6 +121,34 @@
     background-color: #E8F8FF;
 
     z-index: 1;
+    @media (max-width:$md3+px) {
+      @include position-absolute($top: 24px, $left: calc(-30% - #{5px} / 2));
+      width: 110px;
+    }
+    @media (max-width:$md4+px) {
+      @include position-absolute($top: 24px, $left: calc(-26% - #{5px} / 2));
+      width: 72px;
+    }
+    @media (max-width:$md5+px) {
+      @include position-absolute($top: 24px, $left: calc(-20% - #{5px} / 2));
+      width: 60px;
+    }
+    @media (max-width:510px) {
+      @include position-absolute($top: 24px, $left: calc(-19% - #{5px} / 2));
+      width: 50px;
+    }
+    @media (max-width:$md6+px) {
+      @include position-absolute($top: 24px, $left: calc(-16% - #{5px} / 2));
+      width: 40px;
+    }
+    @media (max-width:390px) {
+      @include position-absolute($top: 24px, $left: calc(-15% - #{5px} / 2));
+      width: 30px;
+    }
+    @media (max-width:340px) {
+      @include position-absolute($top: 24px, $left: calc(-12% - #{5px} / 2));
+      width: 22px;
+    }
   }
 
   //last child - without line decoration
@@ -149,8 +189,6 @@
     width: 48%;
     margin: 34px 1% 0px;
     text-align: left;
-
-
     ol {
       list-style-type: none;
       counter-reset: num;
@@ -167,10 +205,6 @@
   h2 {
     display: flex;
     align-self: start;
-  }
-
-  .card-reader__list {
-    margin: 20px 0 50px 50px !important;
   }
 
   &__notice {
@@ -194,11 +228,52 @@
   display: flex;
   opacity: 0;
   visibility: hidden;
-
+  @media (max-width:$md3+px) {
+    flex-direction: column;
+  }
   h3 {
+    @media (max-width:$md3+px) {
+      order: 1;
+    }
     display: inline-block;
     position: absolute;
     left: 1%;
+  }
+  .content-left {
+    .card-reader {
+      &__list {
+        margin: 20px 0px 50px 50px !important;
+        @media (max-width:$md3+px) {
+          display: flex;
+          flex-basis: 100px;
+          height: 50px;
+          margin: 20px 0px 0px 0px!important;
+          top: 40px;
+          left: 0px;
+        }
+      }
+      &__link {
+        @media (max-width:$md3+px) {
+          line-height: 20px;
+        }
+      }
+    }
+    @media (max-width:$md3+px) {
+      order: 2;
+      width: 100%;
+      height: 100px;
+      position: relative;
+    }
+  }
+  .content-right {
+    @media (max-width:$md3+px) {
+      order: 3;
+      width: 100%;
+      margin-top: 0px;
+    }
+  }
+  @media (max-width:$md3+px) {
+    flex-direction: column;
   }
 
   //active panels
@@ -265,4 +340,7 @@
 
 .overflow-hidden {
   margin: 46px 0px 0px 0px;
+  @media (max-width:$md3+px) {
+    margin-top: 20px;
+  }
 }
