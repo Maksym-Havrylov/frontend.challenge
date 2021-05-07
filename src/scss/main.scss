@@ -406,12 +406,19 @@
       @media (max-width:$md3+px) {
         height: 240px;
       }
+      @media (max-width:$md5+px) {
+        width: 100%;
+      }
       .notice {
         left: 52px;
         top: 6px;
         @media (max-width:$md3+px) {
           left: 72px;
           top: 36px;
+        }
+        @media (max-width:$md5+px) {
+          left: 0px;
+          top: 46px;
         }
       }
     }
