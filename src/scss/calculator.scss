@@ -28,7 +28,7 @@
       width: 100%;
       height: 100%;
       margin: 0px;
-      padding: 12px 27px;
+      padding: 0px 20px;
       color: #111563;
       background: #F9FAFC;
       border: none;
@@ -188,15 +188,19 @@
   .minus-btn {
     top: 0px;
     left: 0px;
-    img {
-      margin: 0 auto;
+    &::before {
+      content: url(../img/minus.svg);
+      position: relative;
+      width: 100%;
+      bottom: 4px;
     }
   }
   .plus-btn {
     top: 0px;
     right: 0px;
-    img {
-      margin: 0 auto;
+    &::after {
+      content: url(../img/plus.svg);
+      width: 100%;
     }
   }
   &:hover {

@@ -71,6 +71,10 @@
   &__rating--wrap {
     display: flex;
     justify-content: space-between;
+    &::before {
+      content: url(../img/quote.svg);
+      // width: 100%;
+    }
   }
   &__text {
     position: absolute;
@@ -91,8 +95,16 @@
     text-transform: uppercase;
     font-size: 16px;
     line-height: 150%;
-    img {
-      margin-right: 10px;
+    position: relative;
+  }
+  &__info {
+    margin-left: 30px;
+    &::before {
+      content: url(../img/user.svg);
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      // z-index: 10;
     }
   }
   &__category {

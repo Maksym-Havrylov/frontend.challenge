@@ -102,11 +102,9 @@
     }
   }
   &__social {
-  position: relative;
+    position: relative;
+    height: 36px;
     &--link {
-      &:not(:last-child) {
-        margin-right: 10px;
-      }
       .facebook-wrap {
         position: absolute;
         width: 36px;
@@ -115,7 +113,7 @@
         background: url(../img/logos-facebook-invert.svg) no-repeat;
         transition: all 0.3s ease-in-out;
         &:hover {
-          opacity: 0;
+          background: url(../img/logos-facebook.svg) no-repeat;
         }
       }
       .instagram-wrap {
@@ -126,7 +124,7 @@
         background: url(../img/logos-instagram-invert.svg) no-repeat;
         transition: all 0.3s ease-in-out;
         &:hover {
-          opacity: 0;
+          background: url(../img/logos-instagram.svg) no-repeat;
         }
       }
       .youtube-wrap {
@@ -137,7 +135,7 @@
         background: url(../img/logos-youtube-invert.svg) no-repeat;
         transition: all 0.3s ease-in-out;
         &:hover {
-          opacity: 0;
+          background: url(../img/logos-youtube.svg) no-repeat;
         }
       }
       .pinterest-wrap {
@@ -148,7 +146,7 @@
         background: url(../img/logos-pinterest-invert.svg) no-repeat;
         transition: all 0.3s ease-in-out;
         &:hover {
-          opacity: 0;
+          background: url(../img/logos-pinterest.svg) no-repeat;
         }
       }
     }
@@ -167,8 +165,7 @@
       width: 41px;
       height: 32px;
       border-radius: 4px;
-      background-color: #ffffff;
-      opacity: 0;
+      background: url(../img/fa-brands_cc-visa.svg) no-repeat;
       transition: opacity 0.3s ease-in-out;
       &:hover {
         opacity: 0.4;
@@ -180,13 +177,18 @@
       width: 48px;
       height: 32px;
       border-radius: 4px;
-      background-color: #ffffff;
-      opacity: 0;
+      background: url(../img/fa_cc-mastercard.svg) no-repeat;
       transition: opacity 0.3s ease-in-out;
       &:hover {
         opacity: 0.4;
       }
     }
+  }
+  .security-wrap {
+    height: 20px;
+    width: 100%;
+    margin-top: 30px;
+    background: url(../img/security.svg) no-repeat;
   }
   &__copyright {
     display: flex;
@@ -224,6 +226,9 @@
       justify-content:flex-start;
       li {
         margin-right: 4px;
+        &:not(:last-child)::before {
+          content: url(../img/star.svg);
+        }
         &:last-child {
           color: $mainColor;
           margin-left: 14px;
@@ -232,6 +237,10 @@
           color: $lowercaseTextColor;
         }
       }
+    }
+    &__star {
+    display: block;
+      background: url(../img/star.svg) no-repeat;
     }
   }
   .sellect {
@@ -251,7 +260,7 @@
     background-color: inherit;
     border-radius: 28px;
     border: 2px solid #7E8183;
-    width: 110px;
+    width: 100%;
     padding: 2px 26px;
     font-family: Roboto;
     font-size: 16px;
@@ -304,7 +313,7 @@
     padding: 6px;
     margin-top: 10px;
     border-radius: 28px;
-    width: 140px;
+    width: 100%;
   }
 
   /*hide the items when the select box is closed:*/

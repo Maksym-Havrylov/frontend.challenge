@@ -44,12 +44,18 @@
     }
     a {
       display: flex;
-      justify-content: space-between;
+      position: relative;
       padding-top: 2px;
       font-size: 15px;
       line-height: 20px;
       font-weight: 600;
       color: $lowercaseTextColor;
+      &::after {
+        content: url(../img/contact.svg);
+        position: absolute;
+        left: -30px;
+        top: 0px;
+      }
       img {
         margin: -2px 5px 0 0;
       }
